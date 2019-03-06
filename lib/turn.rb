@@ -39,10 +39,12 @@ end
 def move(array, index, value = "X")
   if position_taken?(array, index)
     puts "Please enter 1-9:"
+  else
+    array[index] = value
+    display_board(array)
   end
 
-  array[index] = value
-  display_board(array)
+
 end
 
 def turn(board)
