@@ -39,6 +39,7 @@ end
 def move(array, index, value = "X")
   if position_taken?(array, index)
     puts "Please enter 1-9:"
+    input = gets.strip
   else
     array[index] = value
     display_board(array)
