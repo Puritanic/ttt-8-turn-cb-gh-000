@@ -37,7 +37,7 @@ def input_to_index(input)
 end
 
 def move(array, index, value = "X")
-  until position_taken?(array, index)
+  if position_taken?(array, index)
     puts "Please enter 1-9:"
   end
 
