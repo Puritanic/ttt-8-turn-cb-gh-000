@@ -29,7 +29,7 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  valid_move?(board, index)
+  !valid_move?(board, index)
 end
 
 def input_to_index(input)
