@@ -40,7 +40,7 @@ def move(array, index, value = "X")
   until position_taken?(array, index)
     puts "Please enter 1-9:"
   end
-  
+
   array[index] = value
   display_board(array)
 end
